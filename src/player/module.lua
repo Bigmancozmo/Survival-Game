@@ -1,7 +1,6 @@
 player = {}
 
 require("player.draw")
-require("input.player")
 
 function player.load()
     player.x = love.graphics.getWidth() / 2
@@ -10,8 +9,10 @@ function player.load()
     player.height = 60
     player.skinTone = {207, 166, 136}
     player.speed = 200
+    player.input = {}
+    require("input.player")
 end
 
 function player.update(dt)
-    input.updatePlayer(dt)
+    player.input.update(dt)
 end
