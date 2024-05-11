@@ -9,6 +9,7 @@ function player.load()
     player.width = 60
     player.height = 60
     player.skinTone = {207, 166, 136}
+    player.speed = 200
 end
 
 function player.update(dt)
