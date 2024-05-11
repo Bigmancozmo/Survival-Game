@@ -29,6 +29,7 @@ jobs:
       - uses: nhartland/love-build@master
         with:
          app_name: 'SurvivalGame'
+         source_dir: 'src'
          love_version: '11.4'
       - uses: actions/upload-artifact@v1
         with:
