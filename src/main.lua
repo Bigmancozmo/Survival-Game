@@ -12,7 +12,10 @@ end
 
 function love.update(dt)
     player.update(dt)
-    redTint = redTint + (0.4 * dt)
+
+    if love.keyboard.isDown("space") then
+        redTint = redTint + (0.75 * dt)
+    end
 end
 
 function love.draw()
