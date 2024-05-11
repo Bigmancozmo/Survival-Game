@@ -13,7 +13,7 @@ function love.update(dt)
 end
 
 function love.draw()
-    love.graphics.setShader(redTintShader)
+    love.graphics.setShader(grayscaleShader)
     player.draw();
     love.graphics.setShader()
 end
