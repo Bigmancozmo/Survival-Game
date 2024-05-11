@@ -17,8 +17,8 @@ function love.update(dt)
 end
 
 function love.draw()
-    love.graphics.setShader(redTintShader)
-    redTintShader:send("tintAmount", redTint);
+    --love.graphics.setShader(redTintShader)
+    --redTintShader:send("tintAmount", redTint);
     player.draw();
     love.graphics.setShader()
 end
